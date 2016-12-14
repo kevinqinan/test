@@ -12,11 +12,14 @@ public class HelloWorldActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hello_world);
-		Log.d("Kevin", "This is the first Android App ");
+		setContentView(R.layout.activity_hello_world);
+		Log.d("Kevin1", "This is the first Android App ");
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
+		
+		//test by kevin for git
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.hello_world, menu);
 		return true;
@@ -32,5 +35,10 @@ public class HelloWorldActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public static void test(){
+		
+		System.out.println("noting will do, only check the git function");
 	}
 }
